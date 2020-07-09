@@ -1,0 +1,146 @@
+{
+  "key": "kuLlthRrI",
+  "widget": "grid",
+  "hidden": false,
+  "option": {
+    "gutter": 0,
+    "align": "top",
+    "justify": "start"
+  },
+  "label": {
+    "width": 80,
+    "position": "right",
+    "colon": false
+  },
+  "container": true,
+  "children": [
+    {
+      "span": 24,
+      "list": [
+        {
+          "key": "k1xrt34qe",
+          "widget": "textarea",
+          "hidden": false,
+          "option": {
+            "rows": 3
+          },
+          "name": "k1xrt34qe",
+          "type": "string",
+          "label": "多行文本",
+          "description": "",
+          "help": "",
+          "disabled": false,
+          "rules": [
+            {
+              "required": false,
+              "message": "必填",
+              "type": "string",
+              "trigger": "blur"
+            }
+          ],
+          "placeholder": "请输入"
+        },
+        {
+          "key": "kPOwezNoE",
+          "widget": "checkbox",
+          "hidden": false,
+          "option": {
+            "type": "static",
+            "direction": "horizontal",
+            "url": "",
+            "adapter": "return data",
+            "dynamicData": [],
+            "data": [
+              {
+                "key": "A",
+                "value": "A"
+              },
+              {
+                "key": "B",
+                "value": "bbb"
+              }
+            ]
+          },
+          "name": "checkbox",
+          "type": "array<string>",
+          "label": "多选框",
+          "description": "",
+          "help": "",
+          "disabled": false,
+          "rules": [
+            {
+              "required": false,
+              "message": "必填",
+              "type": "array",
+              "trigger": "change"
+            }
+          ]
+        },
+        {
+          "key": "k1J9G7I3s",
+          "widget": "button",
+          "hidden": false,
+          "option": {
+            "text": "提交",
+            "type": "primary",
+            "icon": "",
+            "long": false,
+            "ghost": false,
+            "shape": "square"
+          },
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "title": "测试",
+  "description": "",
+  "size": "default",
+  "logics": [
+    {
+      "type": "value",
+      "key": "kPOwezNoE",
+      "action": "<>",
+      "value": "A",
+      "effects": [
+        {
+          "key": "k1J9G7I3s",
+          "properties": [
+            {
+              "key": "hidden",
+              "value": false
+            },
+            {
+              "key": "disabled",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "key": "kPOwezNoE",
+      "action": "><",
+      "value": "A",
+      "effects": [
+        {
+          "key": "k1J9G7I3s",
+          "properties": [
+            {
+              "key": "hidden",
+              "value": false
+            },
+            {
+              "key": "disabled",
+              "value": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style": {
+    "maxWidth": 1600
+  }
+}
