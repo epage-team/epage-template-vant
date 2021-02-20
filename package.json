@@ -39,10 +39,11 @@
     "not ie <= 8"
   ],
   "dependencies": {
-    "epage-vant": "^0.5.1"
+    "epage-vant": "^0.6.0"
   },
   "peerDependencies": {},
   "devDependencies": {
+    "vuedraggable": "^2.24.3",
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
     "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",

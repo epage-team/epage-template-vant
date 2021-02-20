@@ -74,7 +74,7 @@ module.exports = {
     modules: [path.resolve(__dirname, '../node_modules')],
     extensions: ['.js', '.vue', '.jsx'],
     alias: {
-      '@': path.resolve(__dirname, '../src')
+      '@': path.resolve(__dirname, '../src/main.js')
     }
   },
   stats: { children: false }

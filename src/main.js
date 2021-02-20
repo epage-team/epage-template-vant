@@ -1,4 +1,4 @@
-import * as myInputWidget from './myInput'
+import * as myInputWidget from './widgets/myInput'
 
 export default [{
   title: 'vant-custom',

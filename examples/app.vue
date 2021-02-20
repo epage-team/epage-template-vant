@@ -13,9 +13,9 @@
 
 </template>
 <script>
-import { helper } from 'epage-core'
-import widgets, { Render } from 'epage-vant'
-import { widgets as customWidgets } from '@'
+import { helper, render } from 'epage-core'
+import widgets, { entry } from 'epage-vant'
+import customWidgets from '../src/main.js'
 import rootSchema from './schema.json'
 
 const myWidgets = helper.mergeWidgets(widgets, ...customWidgets)
@@ -52,7 +52,13 @@ export default {
     },
     formRender (schema) {
       const el = this.$refs.form
-      return new Render({ el, schema, widgets: myWidgets, mode: 'edit' })
+      return new render.VueRender({
+        el,
+        schema,
+        widgets: myWidgets,
+        mode: 'edit',
+        component: entry
+      })
     },
     getSchema (schema) {
       console.log(1, schema)
