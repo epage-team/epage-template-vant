@@ -39,7 +39,7 @@
     "not ie <= 8"
   ],
   "dependencies": {
-    "epage-vant": "^0.6.0"
+    "epage-vant": "^0.6.1"
   },
   "peerDependencies": {},
   "devDependencies": {
