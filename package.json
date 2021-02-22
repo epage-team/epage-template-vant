@@ -8,6 +8,7 @@
     "start": "npm run dev",
     "dev": "webpack-dev-server --config build/webpack.dev.js",
     "build": "webpack --config build/webpack.build.js",
+    "style": "webpack --config build/webpack.style.js",
     "lint": "eslint --ext .vue --ext .js src/ --fix",
     "analyz": "npm_config_report=true npm run build"
   },
